@@ -88,7 +88,7 @@ namespace SoccerGame
         }
 
         public bool isColided(Player player)
-        {
+        { 
             if(player.Centar.X >= Centar.X + Radius)
             {
                 velocityX *= -1;

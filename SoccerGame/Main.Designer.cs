@@ -37,7 +37,7 @@
             // 
             this.btnQuit.BackColor = System.Drawing.Color.Red;
             this.btnQuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuit.Location = new System.Drawing.Point(551, 248);
+            this.btnQuit.Location = new System.Drawing.Point(552, 287);
             this.btnQuit.Name = "btnQuit";
             this.btnQuit.Size = new System.Drawing.Size(191, 62);
             this.btnQuit.TabIndex = 0;
@@ -50,7 +50,7 @@
             this.btnHow.BackColor = System.Drawing.Color.Aqua;
             this.btnHow.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHow.ForeColor = System.Drawing.Color.Black;
-            this.btnHow.Location = new System.Drawing.Point(42, 248);
+            this.btnHow.Location = new System.Drawing.Point(43, 287);
             this.btnHow.Name = "btnHow";
             this.btnHow.Size = new System.Drawing.Size(191, 62);
             this.btnHow.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             this.btnPlay.BackColor = System.Drawing.Color.Lime;
             this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlay.Location = new System.Drawing.Point(296, 248);
+            this.btnPlay.Location = new System.Drawing.Point(294, 287);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(191, 62);
             this.btnPlay.TabIndex = 2;
