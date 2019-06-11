@@ -41,7 +41,14 @@ namespace SoccerGame
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            Ball.Move(Left, Top, width, height,Player1,Player2);
+            if(Ball.Centar.Y  > Block11.Centar.Y && Ball.Centar.Y  < Block12.Centar.Y && Ball.Centar.X > 0 && Ball.Centar.X < 75)
+            {
+                    int score = int.Parse(ply2lbl.Text);
+                    int newScore = score + 1;
+                    ply2lbl.Text = newScore.ToString();
+                    Ball = new Ball(new Point(480, 320), Color.White);
+            }
+            Ball.Move(Left, Top, width, height, Player1, Player2);
             Invalidate();
         }
 
@@ -68,6 +75,9 @@ namespace SoccerGame
             var brush = new SolidBrush(Color.Blue);
             e.Graphics.DrawImage(backgroundImage, new Point(0, 20));
             Ball.Draw(e.Graphics);
+            var brush1 = new SolidBrush(Color.White);
+            e.Graphics.FillRectangle(brush1, 24, 246, 20, 152);
+            e.Graphics.FillRectangle(brush1, 918, 246, 20, 152);
             Player1.Draw(e.Graphics);
             Player2.Draw(e.Graphics);
             Block11.Draw(e.Graphics);
@@ -82,28 +92,61 @@ namespace SoccerGame
 
             if(e.KeyCode == Keys.Up)
             {
-                y = -10;
+                y = -15;
             }
             if (e.KeyCode == Keys.Down)
             {
-                y = 10;
+                y = 15;
             }
 
             int y2 = 0;
 
             if (e.KeyCode == Keys.NumPad8)
             {
-                y2 = -10;
+                y2 = -15;
             }
             if (e.KeyCode == Keys.NumPad2)
             {
-                y2 = 10;
+                y2 = 15;
             }
 
 
 
             Player2.Move(Top, height, 0, y2);
             Player1.Move(Top, height, 0, y);
+            Invalidate();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            int sek = int.Parse(lblTime.Text);
+            if(sek == 0)
+            {
+                int ply1 = int.Parse(ply1lbl.Text);
+                int ply2 = int.Parse(ply2lbl.Text);
+                if(ply1 > ply2)
+                {
+                    whoWinslbl.Text = "Player1 Wins";
+                    timer1.Stop();
+                    timer2.Stop();
+                }else if(ply2 > ply1)
+                {
+                    whoWinslbl.Text = "Player2 Wins";
+                    timer1.Stop();
+                    timer2.Stop();
+                }
+                else
+                {
+                    whoWinslbl.Text = "Draw";
+                    timer1.Stop();
+                    timer2.Stop();
+                }
+            }
+            else
+            {
+                int newSek = sek - 1;
+                lblTime.Text = newSek.ToString();
+            }
             Invalidate();
         }
     }

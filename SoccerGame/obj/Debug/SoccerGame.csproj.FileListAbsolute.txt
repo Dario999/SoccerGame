@@ -9,3 +9,4 @@ C:\Users\dario\source\repos\SoccerGame\SoccerGame\obj\Debug\SoccerGame.csproj.Co
 C:\Users\dario\source\repos\SoccerGame\SoccerGame\obj\Debug\SoccerGame.exe
 C:\Users\dario\source\repos\SoccerGame\SoccerGame\obj\Debug\SoccerGame.pdb
 C:\Users\dario\source\repos\SoccerGame\SoccerGame\obj\Debug\SoccerGame.PlayForm.resources
+C:\Users\dario\source\repos\SoccerGame\SoccerGame\obj\Debug\SoccerGame.HowToPlay.resources

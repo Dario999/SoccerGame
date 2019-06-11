@@ -26,7 +26,7 @@ namespace SoccerGame
 
         private void btnHow_Click(object sender, EventArgs e)
         {
-            PlayForm htpDialog = new PlayForm();
+            HowToPlay htpDialog = new HowToPlay();
             if (htpDialog.ShowDialog() == DialogResult.OK)
             {
                 this.Hide();
@@ -59,5 +59,7 @@ namespace SoccerGame
                 this.Show();
             }
         }
+
+      
     }
 }

@@ -34,7 +34,6 @@ namespace SoccerGame
         public void Draw(Graphics g)
         {
             var brush = new SolidBrush(Color);
-            var pen = new Pen(Color.Black, 5);
             g.FillRectangle(brush, Centar.X - 120, Centar.Y - 25, 20, 100);
             brush.Dispose();
         }
