@@ -1,0 +1,11 @@
+C:\Users\dario\source\repos\SoccerGame\SoccerGame\bin\Debug\SoccerGame.exe.config
+C:\Users\dario\source\repos\SoccerGame\SoccerGame\bin\Debug\SoccerGame.exe
+C:\Users\dario\source\repos\SoccerGame\SoccerGame\bin\Debug\SoccerGame.pdb
+C:\Users\dario\source\repos\SoccerGame\SoccerGame\obj\Debug\SoccerGame.csprojAssemblyReference.cache
+C:\Users\dario\source\repos\SoccerGame\SoccerGame\obj\Debug\SoccerGame.Main.resources
+C:\Users\dario\source\repos\SoccerGame\SoccerGame\obj\Debug\SoccerGame.Properties.Resources.resources
+C:\Users\dario\source\repos\SoccerGame\SoccerGame\obj\Debug\SoccerGame.csproj.GenerateResource.cache
+C:\Users\dario\source\repos\SoccerGame\SoccerGame\obj\Debug\SoccerGame.csproj.CoreCompileInputs.cache
+C:\Users\dario\source\repos\SoccerGame\SoccerGame\obj\Debug\SoccerGame.exe
+C:\Users\dario\source\repos\SoccerGame\SoccerGame\obj\Debug\SoccerGame.pdb
+C:\Users\dario\source\repos\SoccerGame\SoccerGame\obj\Debug\SoccerGame.PlayForm.resources
