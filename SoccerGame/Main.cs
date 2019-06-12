@@ -54,7 +54,7 @@ namespace SoccerGame
             PlayForm htpDialog = new PlayForm();
             if (htpDialog.ShowDialog() == DialogResult.OK)
             {
-                this.Hide();
+                this.Close();
                 htpDialog.ShowDialog();
                 this.Show();
             }

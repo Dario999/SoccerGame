@@ -131,7 +131,7 @@
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(22, 16);
             this.lblTime.TabIndex = 6;
-            this.lblTime.Text = "15";
+            this.lblTime.Text = "60";
             // 
             // timer2
             // 

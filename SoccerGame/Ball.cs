@@ -19,7 +19,7 @@ namespace SoccerGame
 
         public static readonly int Radius = 15;
         public readonly int Diameter;
-        public const int velocity = 10;
+        public const int velocity = 8;
 
 
         public Ball(Point center, Color c)
@@ -29,9 +29,10 @@ namespace SoccerGame
             Diameter = 2 * Radius;
             this.IsColiding = false;
             var random = new Random();
-            var angle = 2 * Math.PI * random.NextDouble();
+            var angle = 2 * Math.PI * 0.45;
             velocityX = Math.Cos(angle) * velocity;
             velocityY = Math.Sin(angle) * velocity;
+          
         }
 
         public void Move(int left, int top, int width, int height,Player p1,Player p2)
@@ -64,16 +65,16 @@ namespace SoccerGame
                 velocityY *= -1;
             }
 
-            if (isColided(p2))
+            /*if (this.isTouching(p2))
             {
                 velocityX *= -1;
                 velocityY *= -1;
             }
-            if (isColided(p2))
+            if (this.isTouching(p2))
             {
                 velocityX *= -1;
                 velocityY *= -1;
-            }
+            }*/
 
             Centar = new Point((int)nextX, (int)nextY);
            }
@@ -87,14 +88,19 @@ namespace SoccerGame
             brush.Dispose();
         }
 
-        public bool isColided(Player player)
-        { 
-            if(player.Centar.X >= Centar.X + Radius)
+        public void isColided(Player player)
+        {
+            if (this.isTouching(player))
             {
                 velocityX *= -1;
-                return true;
             }
-            return false;
+        }
+        
+        public bool isTouching(Player player)
+        {
+
+            return (Math.Abs(player.Centar.X - this.Centar.X) <= (player.width / 2) +  Radius) &&
+                (Math.Abs(player.Centar.Y + 50 - Centar.Y) <= (player.height / 2) + Radius);
         }
 
     }
