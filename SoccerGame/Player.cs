@@ -29,7 +29,7 @@ namespace SoccerGame
 
         public void Move(int top, int height, int x, int y)
         {
-            if (Centar.Y + y + 25 <= height && Centar.Y + y + 25 >= top + 25)
+            if (Centar.Y + y + 25 <= height && Centar.Y + y + 25 >= top )
             {
                 Centar = new Point(Centar.X + x, Centar.Y + y);
             }

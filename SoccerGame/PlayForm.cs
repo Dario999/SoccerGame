@@ -113,22 +113,22 @@ namespace SoccerGame
 
             if(e.KeyCode == Keys.Up)
             {
-                y = -25;
+                y = -35;
             }
             if (e.KeyCode == Keys.Down)
             {
-                y = 25;
+                y = 35;
             }
 
             int y2 = 0;
 
             if (e.KeyCode == Keys.NumPad8)
             {
-                y2 = -25;
+                y2 = -35;
             }
             if (e.KeyCode == Keys.NumPad2)
             {
-                y2 = 25;
+                y2 = 35;
             }
 
 
