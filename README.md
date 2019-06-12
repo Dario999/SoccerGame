@@ -17,9 +17,9 @@ Projected by: Dario Ivanovski 171198, Tomi Pandaziev 151192, Nikola Edrovski 171
 
 
 private void timer1_Tick(object sender, EventArgs e)
-        {
-            if(Ball.Centar.Y  > Block11.Centar.Y && Ball.Centar.Y  < Block12.Centar.Y && Ball.Centar.X > 0 && Ball.Centar.X < 70)
-            {
+{
+if(Ball.Centar.Y  > Block11.Centar.Y && Ball.Centar.Y  < Block12.Centar.Y && Ball.Centar.X > 0 && Ball.Centar.X < 70)
+{
                     int score = int.Parse(ply2lbl.Text);
                     int newScore = score + 1;
                     ply2lbl.Text = newScore.ToString();
@@ -42,6 +42,6 @@ private void timer1_Tick(object sender, EventArgs e)
             Ball.isColided(Player2);
             Ball.Move(Left, Top, width, height, Player1, Player2);
             Invalidate();
-        }
+}
    
 топлата Ball се придвижува за 1 пожицина на секои 10 милисекунди.Кога топката ке влезе во голот на Player1 или на Player2 се додава поен во во Score лабелот.
