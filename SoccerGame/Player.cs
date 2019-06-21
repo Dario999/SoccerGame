@@ -15,6 +15,7 @@ namespace SoccerGame
         public int width { get; set; }
         public int height { get; set; }
         public bool IsColiding { get; set; }
+        public int velocityY { get; set; }
 
         public const int velocity = 15;
 
@@ -25,6 +26,7 @@ namespace SoccerGame
             this.Centar = center;
             this.Color = c;
             this.IsColiding = false;
+            this.velocityY = 5;
         }
 
         public void Move(int top, int height, int x, int y)
@@ -35,13 +37,31 @@ namespace SoccerGame
             }
         }
 
+        public void AutoMove(int top,int height)
+        {
+
+            var nextY = Centar.Y + velocityY;
+
+            if (nextY <= top + 20)
+            {
+                nextY = (top + 20) + ((top + 20) - nextY);
+                velocityY *= -1;
+            }
+            if (nextY >= height - 100)
+            {
+                nextY = (height - 100) - (nextY - (height - 100));
+                velocityY *= -1;
+            }
+
+            Centar = new Point(Centar.X, (int)nextY);
+
+        }
+
         public void Draw(Graphics g)
         {
             var brush = new SolidBrush(Color);
             g.FillRectangle(brush, Centar.X, Centar.Y , 20, 100);
             brush.Dispose();
-            //g.FillRectangle(brush, Centar.X - 120, Centar.Y - 25, 20, 100);
-
         }
 
 

@@ -66,8 +66,11 @@ namespace SoccerGame
             }
             Ball.isColided(Player1);
             Ball.isColided(Player2);
+
+
         
             Ball.Move(Left, Top, width, height, Player1, Player2);
+            Player2.AutoMove(Top, height);
             Invalidate();
         }
 
@@ -120,20 +123,18 @@ namespace SoccerGame
                 y = 35;
             }
 
-            int y2 = 0;
+            /*int y2 = 0;
 
-            if (e.KeyCode == Keys.NumPad8)
+            if ( e.KeyCode == Keys.NumPad8)
             {
                 y2 = -35;
             }
             if (e.KeyCode == Keys.NumPad2)
             {
                 y2 = 35;
-            }
+            }*/
 
-
-
-            Player2.Move(Top, height, 0, y2);
+            //Player2.Move(Top, height, 0, y2);
             Player1.Move(Top, height, 0, y);
             Invalidate();
         }
@@ -178,6 +179,21 @@ namespace SoccerGame
             Invalidate();
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+            if (label2.Text == "PAUSE")
+            {
+                timer1.Stop();
+                timer2.Stop();
+                label2.Text = "START";
+            }
+            else
+            {
+                timer1.Start();
+                timer2.Start();
+                label2.Text = "PAUSE";
+            }
+        }
 
     }
 }

@@ -39,6 +39,7 @@
             this.lblTime = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.whoWinslbl = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // timer1
@@ -131,11 +132,22 @@
             this.whoWinslbl.Size = new System.Drawing.Size(0, 39);
             this.whoWinslbl.TabIndex = 7;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "PAUSE";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // PlayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.whoWinslbl);
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.label5);
@@ -167,5 +179,6 @@
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label whoWinslbl;
+        private System.Windows.Forms.Label label2;
     }
 }
