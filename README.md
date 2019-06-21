@@ -14,32 +14,35 @@ Projected by: Dario Ivanovski 171198, Tomi Pandaziev 151192, Nikola Edrovski 171
 2.	Во решението на проблемот се формирани две форми од една е почетната форма Main и главната форма PlayForm.Имаме класи Ball,Block и Player каде класата Ball претставува топчето кое се движи низ мапата,класата Block претставуваат пречките со кои се ограничени двата гола а класата Player се двајцата играчи.
 
 3.	Со фукцијата 
+
+```
 private void timer1_Tick(object sender, EventArgs e)
-        {
-            if(Ball.Centar.Y  > Block11.Centar.Y && Ball.Centar.Y  < Block12.Centar.Y && Ball.Centar.X > 0 && Ball.Centar.X < 70)
-            {
-                    int score = int.Parse(ply2lbl.Text);
-                    int newScore = score + 1;
-                    ply2lbl.Text = newScore.ToString();
-                    flag = true;
-                    Counter = 1;
-                    timer1.Stop();
-                    Ball = new Ball(new Point(480, 320), Color.White);
-            }
-            if (Ball.Centar.Y > Block21.Centar.Y && Ball.Centar.Y < Block22.Centar.Y && Ball.Centar.X > 900 && Ball.Centar.X < 920)
-            {
-                int score = int.Parse(ply1lbl.Text);
-                int newScore = score + 1;
-                ply1lbl.Text = newScore.ToString();
-                flag = true;
-                Counter = 1;
-                timer1.Stop();
-                Ball = new Ball(new Point(480, 320), Color.White);
-            }
-            Ball.isColided(Player1);
-            Ball.isColided(Player2);
-        
-            Ball.Move(Left, Top, width, height, Player1, Player2);
-            Invalidate();
-        }
-топлата Ball се придвижува за 1 пожицина на секои 10 милисекунди.Кога топката ке влезе во голот на Player1 или на Player2 се додава поен во во Score лабелот.
+{
+    if(Ball.Centar.Y  > Block11.Centar.Y && Ball.Centar.Y  < Block12.Centar.Y && Ball.Centar.X > 0 && Ball.Centar.X < 70)
+    {
+        int score = int.Parse(ply2lbl.Text);
+        int newScore = score + 1;
+        ply2lbl.Text = newScore.ToString(); 
+        flag = true;
+        Counter = 1;
+        timer1.Stop();
+        Ball = new Ball(new Point(480, 320), Color.White);
+    }
+    if (Ball.Centar.Y > Block21.Centar.Y && Ball.Centar.Y < Block22.Centar.Y && Ball.Centar.X > 900 && Ball.Centar.X < 920)
+    {
+        int score = int.Parse(ply1lbl.Text);
+        int newScore = score + 1;
+        ply1lbl.Text = newScore.ToString();
+        flag = true;
+        Counter = 1;
+        timer1.Stop();
+        Ball = new Ball(new Point(480, 320), Color.White);
+    }
+    Ball.isColided(Player1);
+    Ball.isColided(Player2);
+    Ball.Move(Left, Top, width, height, Player1, Player2);
+    Invalidate();
+}
+```
+   
+топлата Ball се придвижува за 1 позицина на секои 10 милисекунди.Кога топката ке влезе во голот на Player1 или на Player2 се додава поен во Score лабелот.
