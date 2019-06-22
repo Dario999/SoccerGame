@@ -22,3 +22,15 @@ C:\Users\dario\OneDrive\Desktop\SoccerGame\SoccerGame\obj\Debug\SoccerGame.cspro
 C:\Users\dario\OneDrive\Desktop\SoccerGame\SoccerGame\obj\Debug\SoccerGame.csproj.CoreCompileInputs.cache
 C:\Users\dario\OneDrive\Desktop\SoccerGame\SoccerGame\obj\Debug\SoccerGame.exe
 C:\Users\dario\OneDrive\Desktop\SoccerGame\SoccerGame\obj\Debug\SoccerGame.pdb
+E:\SoccerGame\SoccerGame\obj\Debug\SoccerGame.exe
+E:\SoccerGame\SoccerGame\obj\Debug\SoccerGame.pdb
+E:\SoccerGame\SoccerGame\bin\Debug\SoccerGame.exe.config
+E:\SoccerGame\SoccerGame\bin\Debug\SoccerGame.exe
+E:\SoccerGame\SoccerGame\bin\Debug\SoccerGame.pdb
+E:\SoccerGame\SoccerGame\obj\Debug\SoccerGame.csprojAssemblyReference.cache
+E:\SoccerGame\SoccerGame\obj\Debug\SoccerGame.HowToPlay.resources
+E:\SoccerGame\SoccerGame\obj\Debug\SoccerGame.Main.resources
+E:\SoccerGame\SoccerGame\obj\Debug\SoccerGame.PlayForm.resources
+E:\SoccerGame\SoccerGame\obj\Debug\SoccerGame.Properties.Resources.resources
+E:\SoccerGame\SoccerGame\obj\Debug\SoccerGame.csproj.GenerateResource.cache
+E:\SoccerGame\SoccerGame\obj\Debug\SoccerGame.csproj.CoreCompileInputs.cache
